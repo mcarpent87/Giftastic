@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GifTastic Entertainment</title>
+
+  <!-- Link to the jQuery Library -->
+  <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+
+  <!-- Link to the Bootstrap Library -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Link to an sdditional CSS File -->
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+
+  <!-- Overall Bootstrap Grid -->
+  <div class="container">
+
+    <!-- Row containing the animal buttons -->
+    <div class="row" id="buttonPanel">
+    </div> <!-- End row with animal buttons -->
+
+    <!-- Row containing the Gifs and the user form -->
+    <div class="row">
+
+      <!-- Left panel containing the Gifs -->
+      <div class="col-md-8" id="gifPanel">
+      </div> <!-- End left panel containing the Gifs  -->
+
+      <!-- Right panel containing the user form -->
+      <div class="col-md-4 formPanel"> 
+        <form id="animal-form">
+          <label for="animal-input" class="inputLabel">Add an animal</label>
+          <input type="text" id="animal-input"><br>
+
+          <!-- Button triggers a new animal to be added -->
+          <input id="add-animal" type="submit" value="Submit">
+        </form>
+      </div> <!-- End right panel containing the user form -->
+
+    </div> <!-- End row with Gifs and user form -->
+
+  </div> <!-- End Bootstrap Grid -->
+
+  <script type="text/javascript" src="./assets/giftastic.js"></script>
+
+</body>
+</html>
