@@ -12,13 +12,17 @@
 
   <!-- Link to an sdditional CSS File -->
   <link rel="stylesheet" href="./assets/style.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Overall Bootstrap Grid -->
   <div class="container">
-
+    <div class="page-header">
+        <h1>GifTastic!</h1>
+    </div>
     <!-- Row containing the animal buttons -->
     <div class="row" id="buttonPanel">
     </div> <!-- End row with animal buttons -->
@@ -27,17 +31,20 @@
     <div class="row">
 
       <!-- Left panel containing the Gifs -->
-      <div class="col-md-8" id="gifPanel">
+      <div class="col-sm-6" id="gifPanel">
+      
       </div> <!-- End left panel containing the Gifs  -->
-
+      <div class="col-sm-2" id="empty">
+      
+        </div>
       <!-- Right panel containing the user form -->
-      <div class="col-md-4 formPanel"> 
+      <div class="col-sm-4 formPanel"> 
         <form id="animal-form">
-          <label for="animal-input" class="inputLabel">Add an animal</label>
+          <label for="animal-input" class="inputLabel">Add a TV Show</label>
           <input type="text" id="animal-input"><br>
 
           <!-- Button triggers a new animal to be added -->
-          <input id="add-animal" type="submit" value="Submit">
+          <input id="add-animal" type="submit" class ="btn btn-info" value="Submit">
         </form>
       </div> <!-- End right panel containing the user form -->
 

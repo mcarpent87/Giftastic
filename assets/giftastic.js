@@ -1,6 +1,6 @@
 
 // Initial array of animals that will show up on the html page as the "defualt" animal buttons
-var animalsArray = ["giraffe", "dog", "pig", "raccoon", "opossum", "squirrel", "chipmunk", "bear", "zebra", "lion", "cheetah", "deer", "leopard", "skunk"];
+var animalsArray = ["Breaking Bad", "Better Call Saul", "Mad Men", "The Office", "Parks and Rec", "New Girl", "Lost", "30 Rock", "Game of Thrones", "Veep", "Silicon Valley", "Kimmy Schmidt", "Modern Family", "The Walking Dead"];
 
 // Function for displaying animal buttonsn on html page
 function renderButtons() {
