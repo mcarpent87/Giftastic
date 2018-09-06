@@ -1,6 +1,6 @@
 
 // Initial array of animals that will show up on the html page as the "defualt" animal buttons
-var animalsArray = ["Breaking Bad", "Better Call Saul", "Mad Men", "The Office", "Parks and Rec", "New Girl", "Lost", "30 Rock", "Game of Thrones", "Veep", "Silicon Valley", "Kimmy Schmidt", "Modern Family", "The Walking Dead"];
+var animalsArray = ["Seinfeld","Curb Your Enthusiasm","Breaking Bad", "Better Call Saul", "Mad Men", "The Office", "Parks and Rec", "New Girl", "Lost", "30 Rock", "Game of Thrones", "Veep", "Silicon Valley", "Kimmy Schmidt", "Modern Family", "The Walking Dead", "The Simpsons"];
 
 // Function for displaying animal buttonsn on html page
 function renderButtons() {
@@ -52,7 +52,7 @@ var animalName = $(this).attr("data-animal");
 //Giphy URL
 // Constructing a queryURL using the animal name
 var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
-animalName + "&api_key=kJiIUSPXUQayNOlryNjJ70NSoNhpD79S";
+animalName + "&api_key=kJiIUSPXUQayNOlryNjJ70NSoNhpD79S&limit=10";
 
 // dc6zaTOxFJmzC
 
@@ -86,6 +86,7 @@ method: "GET"
       $("#gifPanel").append(newDiv);
 
     }
+    
 });
 }
 
